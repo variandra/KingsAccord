@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <style>
+    .sec2 {
+        background: green;
+        position: absolute;
+        top: 35%;
+        left: 5%;
+        height: 400px;
+        transform: skew(-15deg);
+        overflow: hidden;
+        width: 45%;
+        z-index: 0;
+        transition:width 1s ease,transform 1s ease, z-index 1s linear 0s  ;
+    }
+    .sec2:hover {
+        width: 60%;
+        z-index: 10;
+    
+    }
+    .sec3 {
+        overflow: hidden;
+        background: red;
+        position: absolute;
+        top: 35%;
+        right: 5%;
+        height: 400px;
+        width: 45%;
+        transform: skew(-15deg);
+        z-index: 0;
+        transition:width 1s ease, transform 1s ease, z-index 1s ease 2s ;
+    }
+    
+    .sec3:hover {
+        width: 60%;
+        z-index: 1;
+    }
+    #atlas {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    </style>
+</head>
+<body>
+    <div class="sec1">
+    <div class="sec2"><img width="900px" id="ark" src="img/ark.jpg" alt="paper"></div>
+    <div class="sec3"><img width="900" id="atlas" src="img/atlas.jpg" alt="sky"></div>
+    </div>
+</body>
+</html>
